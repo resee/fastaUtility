@@ -16,15 +16,14 @@ USASE: fastaUtility.py [options: -h,-t,-s,-a,-n,-e,-r,-l,-w] -f fastafile [-i id
    
    -t: tab delimited format
    
-   -s: sub sequences (need to provide an idfile with title, and start and end posiotions,
-                      the title should match the first word of the sequecne title)
+   -s: sub sequences (need to provide an idfile with white space separated - sequence title, and start and end posiotions on the                       sequence; the title should match the first word of the sequecne title)
                       
    -a: amino acids, finds the longest orf (from all 6 reading frame) and 
                      yields amino acid sequence of the orf
                      
    -n: nucleotide change- DNA to RNA and vice versa
    
-   -e: extracted fasta sequence (need to proved an idfile with titles to extract
+   -e: extracted fasta sequence (need to provide an idfile with sequence title to extract;
                                  the title should match the first word of the sequecne title)
                                  
    -r: reverse complement on RNA or DNA sequences
