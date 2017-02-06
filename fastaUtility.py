@@ -1,11 +1,10 @@
-
 #fastaUtility.py
 #Rishi Aryal, 2017 (reseearyal[at]gmail[dot]com)
 
 '''
 Usage: fastaUtility.py [options: -h,-t,-s,-a,-n,-e,-r,-l,-w] -f <fastafile> -i <idfile> 
    
-   -h: Usuage help 
+   -h: Usage help 
    
    OPTIONs: produced files with 
    -t: tab delimited format
@@ -20,7 +19,7 @@ Usage: fastaUtility.py [options: -h,-t,-s,-a,-n,-e,-r,-l,-w] -f <fastafile> -i <
    
    file options:
    -f: Fasta file ( need for all above options)
-   -i: ID file ( need provide for -s and -e options above)
+   -i: ID file (optional; need to provide only with -s and -e options above)
    
    '''
 
@@ -296,7 +295,7 @@ def main(argv):
      opts,args=getopt.getopt(argv,"htsanerlwi:f:",["help","tab","subseq","aminoacid",\
      "ntchange","fastaextract","revcomp:","length","swapped","idfile=","fastafile="])
    except getopt.GetoptError:
-      print ('Usuage: fastaUtility.py [options: -h,-t,-s,-a,-n,-e,-r,-l,-w]'\
+      print ('Usage: fastaUtility.py [options: -h,-t,-s,-a,-n,-e,-r,-l,-w]'\
       ' -f <fastafile> -i <idfile> ')
       sys.exit(2)
 
